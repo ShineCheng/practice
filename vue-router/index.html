@@ -1,0 +1,152 @@
+<html>
+
+<head>
+    <title>Vue.js - Blog practice</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0
+        }
+
+        .loading {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            text-align: center;
+            line-height: 80px
+        }
+
+        h1 {
+            text-align: center
+        }
+
+        .header {
+            width: 100%;
+            display: inline-block
+        }
+        .header a {
+            width: 25%;
+            float: left;
+            text-align: center
+        }
+
+        .view {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #000
+        }
+        .view.second {
+            border-style: dotted
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+
+        <div class="loading" v-if="loading">
+            Loading...
+        </div>
+
+        <h1>My blog</h1>
+
+        <div class="header">
+            <router-link to="/home">HOME</router-link>
+            <router-link to="/about me">about me</router-link>
+            <router-link to="/settings">Settings</router-link>
+            <router-link :to="{ path: '/article', params: { article: article } }">article</router-link>
+        </div>
+
+        <router-view class="view"></router-view>
+
+    </div>
+
+    <script src="libs/vue.js"></script>
+    <script src="libs/vue-router.js"></script>
+    <script src="data.js"></script>
+    <script>
+
+        const router = new VueRouter({
+            mode: "history",
+            routes: [
+                {
+                    path: "/home",
+                    component: { template: `<div>home</div>` }
+                },
+                {
+                    path: "/about me",
+                    component: { template: `<div>about me</div>` }
+                },
+                {
+                    path: "/settings", component: {
+                        template: `<div>settings
+                                        <ul>
+                                            <li>
+                                                <router-link to="/settings/profile">Profile</router-link>
+                                            </li>
+                                            <li>
+                                                <router-link to="/settings/password">Password</router-link>
+                                            </li>
+                                        </ul>
+                                        <router-view name="secondView" class="view second"></router-view>
+                                    </div>` },
+                        children: [
+                            {
+                                path: "profile",
+                                components: { secondView: { template: `<div>Profile</div>` } }
+                            }, {
+                                path: "password",
+                                components: { secondView: { template: `<div>Password</div>` } }
+                            }
+                        ]
+                },
+                {
+                    path: "/article",
+                    component: {
+                        template: `<div>article
+                                        <ul>
+                                            <li v-for="(item, index) in $root.$data.article">
+                                                <router-link :to="{ name: 'article-inner', params: { title: item.title, data: item } }" :key="index">{{ item.title }}</router-link>
+                                            </li>
+                                        </ul>
+                                        <router-view name="secondView" class="view second"></router-view>
+                                    </div>` },
+                        children: [
+                            {
+                                path: ":title",
+                                name: "article-inner",
+                                components: {
+                                    secondView: { template: `<div>{{ $route.params.data.article }}</div>` }
+                                }
+                            }
+                        ]
+                }
+            ]
+        })
+
+        const app = new Vue({
+            router,
+            data: {
+                loading: false,
+                article: data
+            }
+        }).$mount("#app");
+
+        router.beforeEach((to, from, next) => {
+            app.loading = true;
+            next();
+        });
+
+        router.afterEach((to, from) => {
+            app.loading = false;
+        });
+
+        router.push("home");
+
+    </script>
+
+</body>
+
+</html>
