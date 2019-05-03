@@ -111,6 +111,7 @@
                                                 <router-link :to="{ name: 'article-inner', params: { title: item.title, data: item } }" :key="index">{{ item.title }}</router-link>
                                             </li>
                                         </ul>
+                                        <button v-on:click="$root.newArticle">new article</button>
                                         <router-view name="secondView" class="view second"></router-view>
                                     </div>` },
                         children: [
@@ -127,12 +128,18 @@
         })
 
         const app = new Vue({
+            el: '#app',
             router,
             data: {
                 loading: false,
                 article: data
+            },
+            methods: {
+                newArticle: function(e) {
+                    data.push({ title: `article ${data.length + 1} title`, article: `article ${data.length + 1} article` })
+                }
             }
-        }).$mount("#app");
+        });
 
         router.beforeEach((to, from, next) => {
             app.loading = true;
