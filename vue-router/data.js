@@ -1,10 +1,10 @@
 const data = [
     {
-        title: "Startups Took Over Earth and Now They’re Headed to Space — With Creepy Pepsi Ads in Tow",
-        article: "Last November, Reuters released a bombshell report detailing the location of 39 Muslim “reeducation” camps in China’s Xinjiang province. Now widely understood as detention centers perpetuating serious human rights abuses, these camps had expanded in secret for years. But for all its restrictions, Beijing couldn’t hide them from a set of eyes hovering in Lower Earth Orbit (LEO)."
+        title: "article 1 title",
+        article: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet mollis elit, feugiat bibendum libero. Integer et cursus ex. Sed sodales pharetra nunc, eget consectetur massa pulvinar sit amet. Proin maximus velit non erat egestas, in ornare elit tincidunt. Nunc augue mauris, efficitur euismod velit ac, blandit suscipit orci. Morbi finibus risus consectetur eros placerat, nec luctus ex pellentesque. Suspendisse potenti. Mauris in urna a enim egestas semper. Donec tincidunt, purus id pulvinar efficitur, est leo porta nunc, eu molestie lacus ante vel urna. Sed vestibulum erat a sapien aliquam pellentesque."
     },
     {
-        title: "Sri Lanka’s Decision to Censor Social Platforms Is Indefensible",
-        article: "The best advice I’ve ever got about reading came from a secretive movie producer and talent manager who’d sold more than 100 million albums and done more than $1B in box office returns. He said to me one day, “Ryan, it’s not enough that you read a lot. To do great things, you have to read to lead.  What he meant was that in an age where almost nobody reads, you can be forgiven for thinking that the simple act of picking up a book is revolutionary. It may be, but it’s not enough. Reading to lead means pushing yourself–reading books “above your level.”"
+        title: "article 2 title",
+        article: "Nam rhoncus, nisi rhoncus imperdiet rhoncus, neque lacus molestie nibh, vel tincidunt mauris turpis nec orci. In nec euismod arcu, eu malesuada justo. Mauris nec tempus ligula, vulputate laoreet sem. Mauris dignissim quam vel neque vulputate scelerisque. Ut sed nibh ut sem pellentesque malesuada eget et orci. Donec rutrum, massa quis rutrum feugiat, ex odio varius neque, in posuere justo lectus eget orci. Quisque non enim nulla. Proin tempor aliquet tellus a porta. Mauris cursus ultricies lobortis. Fusce at felis eget turpis finibus interdum ac at turpis. Fusce velit justo, tincidunt non diam et, ornare tempor eros. Phasellus at consequat nibh, quis consectetur arcu. Cras facilisis et felis quis mattis."
     }
 ]
