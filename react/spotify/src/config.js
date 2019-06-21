@@ -1,0 +1,1 @@
+export const IMAGE_DOMAIN = 'http://localhost:3002';

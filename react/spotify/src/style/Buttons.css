@@ -1,0 +1,26 @@
+.buttons {
+    float: left;
+    clear: left;
+}
+.buttons div {
+    float: left;
+    margin-right: 10px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+.buttons .play {
+    width: 100px;
+    border: none;
+    background-color: #1cb953;
+}
+.buttons .follow {
+    width: 200px;
+}
+.buttons .more {
+    width: 30px;
+}

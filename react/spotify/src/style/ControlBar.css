@@ -1,0 +1,125 @@
+.controlBar {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+    background-color: #282828;
+    display: flex;
+    align-items: center;
+}
+.controlBar .left {
+    width: 20%;
+    float: left;
+    display: flex;
+}
+.controlBar .left .cover {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+.controlBar .left .info {
+    float: left;
+    margin-left: 10px;
+}
+.controlBar .left .info > div {
+    float: left;
+    margin: 5px;
+    color: #fff;
+    line-height: 24px;
+    font-size: 16px;
+}
+.controlBar .left .info .title {
+}
+.controlBar .left .info .addBtn {
+    cursor: pointer;
+}
+.controlBar .left .info .artist {
+    clear: left;
+    font-size: 12px;
+}
+.controlBar .center {
+    width: 60%;
+    float: left;
+    padding: 10px;
+}
+.controlBar .center .youtube {
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    position: absolute;
+    z-index: -9999;
+}
+.controlBar .center .controls {
+    width: 100%;
+    margin: 0 10px;
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+.controlBar .center .controls > div {
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin: 0 10px;
+    color: #fff;
+    border-radius: 14px;
+    cursor: pointer;
+}
+.controlBar .center .progress {
+    width: 100%;
+    margin: 10px;
+    float: left;
+}
+.controlBar .center .progress > div {
+    float: left;
+    margin: 0 10px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 20px;
+}
+.controlBar .center .progress .passedTime {
+}
+.controlBar .center .progress .line {
+    width: 80%;
+    height: 5px;
+    margin-top: 7px;
+    background-color: #404040;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.controlBar .center .progress .line div {
+    height: 5px;
+    float: left;
+    background-color: #b3b3b3;
+    border-radius: 5px;
+}
+.controlBar .center .progress .leftTime {
+}
+.controlBar .right {
+    width: 20%;
+    float: left;
+}
+.controlBar .right .volumeBtn {
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin: 0 10px;
+    color: #fff;
+    border-radius: 14px;
+    cursor: pointer;
+}
+.controlBar .right .line {
+    width: 80%;
+    height: 5px;
+    margin-top: 7px;
+    float: left;
+    background-color: #404040;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.controlBar .right .line div {
+    height: 5px;
+    float: left;
+    background-color: #b3b3b3;
+    border-radius: 5px;
+}

@@ -1,0 +1,27 @@
+.addressBar {
+    width: 100%;
+    float: left;
+    padding: 10px 0;
+}
+.addressBar .address {
+    float: left;
+}
+.addressBar .address > div {
+    float: left;
+    margin: 0 10px;
+    color: #696969;
+    font-size: 20px;
+    line-height: 24px;
+    cursor: pointer;
+}
+.addressBar .search {
+    width: 150px;
+    margin: 0;
+    padding: 0 10px;
+    border-radius: 20px;
+    background-color: #fff;
+    line-height: 24px;
+    font-size: 16px;
+    color: #4b4b4b;
+    border: none;
+}

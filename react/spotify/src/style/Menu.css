@@ -1,0 +1,46 @@
+.menu {
+    width: 20%;
+    padding: 10px;
+    background-color: #121212;
+}
+.menu .main {
+    width: 100%;
+    margin: 10px 0;
+    padding: 0;
+    background: none;
+}
+.menu .main li {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #9c9c9c;
+    line-height: 24px;
+    cursor: pointer;
+}
+.menu .main li a {
+    color: #fff;
+}
+.menu .main li i {
+    float: left;
+    margin-right: 10px;
+}
+.menu .lists {
+    width: 100%;
+    float: left;
+    margin: 10px 0;
+}
+.menu .lists li {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #9c9c9c;
+    line-height: 22px;
+    cursor: pointer;
+}
+.menu .lists li a {
+    color: #fff;
+}
+.menu .lists li.title {
+    margin: 5px 0;
+    font-size: 12px;
+    color: #7a7a7a;
+    cursor: auto;
+}

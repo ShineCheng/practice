@@ -1,0 +1,134 @@
+.header {
+    width: 100%;
+    float: left;
+    margin: 20px 0;
+    display: flex;
+}
+.header .cover {
+    width: 250px;
+    height: 250px;
+    float: left;
+}
+.header .info {
+    float: left;
+    margin: 0 20px;
+    font-size: 16px;
+    color: #7e7e7e;
+    line-height: 22px;
+}
+.header .info > div {
+    margin: 10px 0;
+}
+.header .info .type {
+    margin: 5px 0;
+    font-size: 12px;
+    color: #b2b2b2;
+}
+.header .info .title {
+    font-size: 60px;
+    color: #fff;
+    font-weight: 800;
+    line-height: 80px;
+}
+
+.search {
+    width: 100%;
+    float: left;
+    margin: 10px 0;
+}
+.search i {
+    float: left;
+    margin-top: 4px;
+    color: #515151;
+}
+.search input {
+    width: 95%;
+    float: left;
+    border: none;
+    border-radius: 10px;
+    background: none;
+    color: #515151;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+.playlist {
+    width: 100%;
+    float: left;
+    margin: 20px 0;
+}
+.playlist li {
+    width: 100%;
+    float: left;
+    padding: 10px 0;
+    border-top: 1px solid #212121;
+    border-bottom: 1px solid #212121;
+    cursor: pointer;
+}
+.playlist li > div {
+    float: left;
+    padding: 0 10px;
+    color: #fff;
+    line-height: 24px;
+    font-size: 16px;
+}
+.playlist li.header > div {
+    height: 20px;
+}
+.playlist li.header > div:nth-child(1) {
+    width: 5%;
+}
+.playlist li > div:nth-child(2) {
+    width: 5%;
+}
+.playlist li > div:nth-child(3) {
+    width: 25%;
+}
+.playlist li > div:nth-child(4) {
+    width: 25%;
+}
+.playlist li > div:nth-child(5) {
+    width: 25%;
+}
+.playlist li > div:nth-child(6) {
+    width: 15%;
+}
+.playlist li.select > div {
+    color: #1cb953;
+}
+.playlist li.header > div {
+    color: #858585;
+    font-size: 12px;
+}
+.playlist li .playBtn {
+    width: 27px;
+    height: 27px;
+    padding: 0;
+    font-size: 18px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    opacity: 0;
+}
+.playlist li:hover .playBtn {
+    opacity: 1;
+}
+.playlist li.select .playBtn {
+    opacity: 1;
+}
+.playlist li .playBtn i {
+    position: absolute;
+    opacity: 0;
+}
+.playlist li:hover .playBtn i:nth-child(2) {
+    opacity: 1;
+}
+.playlist li.select .playBtn i:nth-child(1) {
+    opacity: 1;
+}
+.playlist li.select:hover .playBtn i:nth-child(1) {
+    opacity: 0;
+}
+.playlist li .addBtn {
+    cursor: pointer;
+}
