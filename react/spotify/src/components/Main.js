@@ -14,10 +14,10 @@ const Main = () => {
         <div className="main">
             <AddressBar />
             <Switch>
-                <Route path="/" exact component={CollectionList} />
                 <Route path="/playlist/:type/:id" exact component={PlayList} />
                 <Route path="/userplaylist" exact component={UserPlayList} />
                 <Route path="/search/:value" exact component={Search} />
+                <Route path="/" component={CollectionList} />
             </Switch>
         </div>
     )
